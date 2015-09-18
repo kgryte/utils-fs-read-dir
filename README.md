@@ -20,7 +20,7 @@ var readdir = require( 'utils-fs-read-dir' );
 
 #### readdir( path, clbk )
 
-Reads the entire of a directory.
+Reads the contents of a directory.
 
 ``` javascript
 readdir( __dirname, onRead );
@@ -34,8 +34,6 @@ function onRead( error, data ) {
 }
 ```
 
-The function accepts the same options as [`fs.readdir()`](https://nodejs.org/api/fs.html#fs_fs_readdir_path_callback).
-
 
 #### readdir.sync( path )
 
@@ -48,8 +46,6 @@ if ( out instanceof Error ) {
 }
 console.log( out );
 ```
-
-The function accepts the same options as [`fs.readdirSync()`](https://nodejs.org/api/fs.html#fs_fs_readdirsync_path).
 
 
 ## Notes
